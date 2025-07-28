@@ -1,8 +1,11 @@
 {
   "version": "0.2.0",
   "configurations": [
+    C/C++: (gcc) Launch file
+
+    
     {
-      "name": "C/C++ Runner: Debug Session",
+      "name": "Run c program",
       "type": "cppdbg",
       "request": "launch",
       "args": [],
