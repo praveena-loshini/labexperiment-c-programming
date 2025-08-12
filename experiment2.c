@@ -1,6 +1,7 @@
 #include<stdio.h>
 int main(){
-    int Array[10],i,n,number_of_subjects_passed,number_of_subjects_failed;
+    int Array[10],i,n;
+    int number_of_subjects_passed=0,number_of_subjects_failed=0;
     printf("Enter the no of subjects");
     scanf("%d",&n);
     for(i=0;i<n;i++){
@@ -10,7 +11,7 @@ int main(){
         if(Array[i]>=45){
           number_of_subjects_passed+=1;
         }else{
-            number_of_subjects_failed+=1;
+          number_of_subjects_failed=number_of_subjects_failed+1;
         }
         
     }
@@ -18,7 +19,7 @@ int main(){
         printf("Qualified.");
     }
     else{
-        printf("Not qualified for the exam.Failed in %d subjects.",number_of_subjects_failed);
+        printf("Not qualified.Failed in %d subjects.",number_of_subjects_failed);
     }
 
-}
+}p
